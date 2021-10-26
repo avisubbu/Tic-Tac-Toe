@@ -1,0 +1,21 @@
+h1{
+	color:#0000FF;
+}
+
+h2{
+	color:#FF0000;
+}
+
+.YTF{
+	width: 90%;
+	height:90%
+}
+
+.gamepanel{
+	height: 30em;
+	width: 60%;
+}
+
+.hide{
+	display: none;
+}
