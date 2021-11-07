@@ -145,7 +145,7 @@ public class GameUtils {
                 for(int j=0;j<3;j++){
                     if(brd[i][j].equals("_")){
                         brd[i][j]=opponent;
-                        best = Math.max(best, minimax(brd, !isMax, player, opponent));
+                        best = Math.min(best, minimax(brd, !isMax, player, opponent));
                         brd[i][j]="_";
                     }
                 }
