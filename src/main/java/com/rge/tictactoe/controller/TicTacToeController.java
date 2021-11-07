@@ -71,7 +71,7 @@ public class TicTacToeController{
              */
             if(game.getGameType().equals("single") && GameUtils.anyMovesLeft(board) 
                 && GameUtils.winner(board)==null){
-                Move move = GameUtils.findBestMove(board, symbol, "O");
+                Move move = GameUtils.findBestMove(board, "O", symbol);
                 Date dt = new Date();
                 step = new Step("Computer", move.row+""+move.col, dt.getTime());
                 game.getSteps().add(step);
